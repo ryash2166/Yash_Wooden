@@ -1,0 +1,21 @@
+.navButton li  button {
+    display: flex;
+    position: relative;
+}
+
+.navButton li  button .react-i{
+    font-size: 1.7rem;    
+}
+
+.navButton li button span{
+    background-color: #D51243;
+    position: absolute;
+    top: -8px;
+    right:-8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #FFF;
+    font-size: 1rem;
+    text-align: center;
+}

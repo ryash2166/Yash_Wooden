@@ -1,0 +1,46 @@
+.transition-All{
+    transition: all 0.3s linear;
+}
+
+/* ====== NavBar Row 1 ===== */
+
+#Row-1{
+    min-height: 60px;
+    padding-block:0.3rem;
+}
+
+.searchBar label .react-i{
+    font-size: 1.6rem;
+}
+
+.searchBar #searchBtn{
+    font-size: 1.3rem;
+    padding-inline: 0.4rem;
+    outline: none;
+    display: block;
+    width: 100%;
+}
+
+.select-Lang .lang-list{
+    visibility: hidden;
+    z-index: 4;
+}
+
+.select-Lang:hover a .down-arrow {
+    transform: rotate(180deg);
+}
+
+.select-Lang:hover .lang-list{
+    visibility: visible;
+}
+
+/* ====== NavBar Row 2 ===== */
+
+#Row-2{
+    min-height: 60px;
+}
+
+.content-links li a:hover{
+    color: #D51243;
+    transition: all 0.3s linear;
+}

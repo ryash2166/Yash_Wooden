@@ -1,0 +1,71 @@
+#PRODUCTCARD{
+    background-color: #fff;
+    z-index: 2;
+    position: relative;
+    border-radius: 6px 6px 0px 0px;
+    transition: all .2s linear;
+}
+#PRODUCTCARD:hover{
+    z-index: 4;
+    box-shadow: 0px -6px 10px 4px rgba(0,0,0,0.1);
+}
+
+
+.ProductCard-Head #ProductCard-link img:nth-child(2){
+    opacity: 0;   
+    z-index: 1;
+    transition: all .3s linear;
+}
+
+.ProductCard-Head:hover #ProductCard-link img:nth-child(2){
+    opacity: 1;
+    z-index: 2;
+}
+
+.ProductCard-Head .ProductCard-Buttons{
+    inset: 0;
+    z-index: 10;
+    margin: auto;
+    height: 50px;
+    width: 180px;
+    top: 150px;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+.ProductCard-Head:hover .ProductCard-Buttons{
+    top: 0%;
+    visibility:visible;
+}
+
+#PRODUCTCARD .ProductCard-Review{
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fff;
+    height: 50px;
+    border-radius: 0px 0px 6px 6px ;
+}
+
+#PRODUCTCARD:hover .ProductCard-Review{
+    box-shadow: 0px 10px 10px 4px rgba(0,0,0,0.1);
+    opacity: 1;
+    visibility: visible;
+} 
+
+
+#PRODUCTCARD .ProductCard-Review .ProductCard-Colors a:hover{
+    border-color: currentColor ;
+}
+
+#PRODUCTCARD .ProductCard-Review .ProductCard-Colors a:hover span{
+    transform: scale(0.7);   
+}
+
+
+.ShopP2-card-warp .ProductCard .ProductCard-Review {
+    margin-top: -5px;
+}
+
+input[type="checkbox"].category-checkbox{
+    accent-color: #000;  
+}

@@ -1,0 +1,72 @@
+/* ON SCROLL BAR CSS */
+#OnScrollNavBar{
+ min-height: 120px;
+}
+
+#OnScrollNavBar-warp{
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,.2);
+    background-color: #FFFFFF;
+}
+
+.Set-On-NavBar{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index:15;
+    transition: all 1s linear;
+}
+
+#OnScrollNavBar-warp.Off-Scroll-Nav{
+    top: -100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+#OnScrollNavBar-warp.On-Scroll-Nav{
+    top:0%;
+    opacity: 1;
+    visibility:visible;
+}
+
+/*  MOBILE MENU CSS */
+
+#mobile-menu-warp{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100%;
+    z-index: 16;
+    transform: translateX(-200%);
+    transition: all 0.3s linear;
+}
+
+#mobile-menu-warp.MenuOn{
+    transform: translateX(0%);
+}
+
+
+#mobile-menu-warp.mobile-bg-warp{
+    background: linear-gradient(to right , #0000004d,#00000064,#00000073);
+}
+
+
+/* ON SCROLL BAR CSS  */
+
+@media (max-width:1280px) {
+    #Row-1,
+    #Row-2,
+    .TopShopLink{
+        display: none ;
+    }
+    #OnScrollNavBar-warp.Off-Scroll-Nav{
+        top: 0%;
+        opacity: 1;
+        visibility:visible;
+    }
+    .OnScroll-navLink{
+        display: none;
+    }
+}
+

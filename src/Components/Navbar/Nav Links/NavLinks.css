@@ -1,0 +1,110 @@
+#NavLink-wrapper .Nav-link{
+    margin: 0% 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 52px;
+}
+
+#NavLink-wrapper .Nav-link .link-box{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 0px 0px 10px 10px;
+    padding: 0px 1.3rem;
+    box-shadow: 3px 3px 6px 2px rgba(0,0,0,0.2);
+    top: 200%;
+    height: 0%;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1 !important;
+    transition: all 0.2s linear;
+}
+
+#NavLink-wrapper .Nav-link:hover .link-box{
+    visibility: visible;
+    display: block;
+    top: 52px;
+    height: auto;
+    overflow:visible;
+    opacity: 1;
+    z-index: 12 !important;
+}
+
+#OnScrollNavBar #NavLink-wrapper .Nav-link:hover .link-box{
+    top: 120px;
+}
+
+
+#pages.Nav-link .link-box{
+    border-top: 2px solid #D51243 ;
+}
+
+#pages.Nav-link .link-box .links-warp{
+    padding-top:2rem ;
+    width: 15rem;
+    border: none !important;
+}
+
+#pages.Nav-link:hover .link-box{
+    display: flex !important;
+    flex-flow: row;
+}
+
+
+
+#NavLink-wrapper .Nav-link .head-link{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#NavLink-wrapper .Nav-link .head-link i{
+    opacity: 0.7;
+}
+
+#NavLink-wrapper .Nav-link:hover .head-link{
+    color: #D51243;
+    opacity: 1;
+}
+
+
+
+.Nav-link .links-warp {
+    width: 18rem;
+    padding-top: 1rem !important;
+    border-top: 2px solid #D51243;
+}
+.Nav-link .links-warp li a{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-transform: capitalize !important;
+    font-size: 1rem;
+    padding: 0.5rem 4rem 1rem 0.3rem;
+    display: block;
+    transition: all 0.2s linear;
+}
+
+.Nav-link .links-warp li a:hover{
+    color: #D51243;
+    transform: translateX(6px);
+}
+
+.Nav-link .links-warp li h3{
+    margin: 1rem 0px;
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+
+.Nav-link .links-warp:hover li h3{
+    color: #D51243;
+    transition: all 0.2s linear;
+}
+
+
+@media (max-width:1080px) {
+    #pages.Nav-link .link-box{
+        flex-flow: row wrap !important;
+    }
+}

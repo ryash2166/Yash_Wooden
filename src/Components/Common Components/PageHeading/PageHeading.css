@@ -1,0 +1,49 @@
+.PageHeading-wrapper{
+    background: url(../../../Assets/breadcrumb-01.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:cover;
+}
+
+.PageHeading-link{
+    min-height: 14rem;
+}
+
+ul.Nave-GetLinks{
+    font-size: 1.2rem;
+}
+
+
+ul.Nave-GetLinks li a.back-Link:hover{
+    color: #D51243;
+}
+
+ul.Nave-GetLinks li p.PgTitle-text{
+    opacity: 0.6;
+}
+
+
+ul.Nave-GetLinks li p.PgTitle-text::before{
+    content: "";
+    display: block;
+    margin: auto 0.6rem;
+    height: 2px;
+    width: 28px;
+    opacity: 0.4;
+    background-color: currentColor;
+}
+
+
+.PageHeading-link h1.PgTitle{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+
+@media (max-width:768px){
+    .PageHeading-wrapper{
+        background-position: center;
+    }
+}

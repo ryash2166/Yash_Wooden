@@ -1,0 +1,25 @@
+
+.ShopD1-info .ProductCard-Colors a:hover{
+    border-color: currentColor ;
+}
+
+.ShopD1-info .ProductCard-Colors a:hover span{
+    transform: scale(0.7);   
+}
+
+ul.ShopD-Details .share-link p{
+    display: flex ;
+    align-items: center;
+    justify-content: start;
+}
+
+ul.ShopD-Details .share-link p a{
+    font-size: 1.1rem;
+    padding-inline: 0.4rem;
+}
+
+
+div.ShopD-content ul.conditionalList li:hover span img{
+    transform: translateY(-5px);
+    transition: all 0.3s linear;
+}

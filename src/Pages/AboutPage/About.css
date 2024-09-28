@@ -1,0 +1,37 @@
+div#About_Team .swiper{
+    height: 100%;
+    width: 100%;
+}
+
+ul.CheckMark-box  li a.CheckMark-link:hover span::before{
+   animation-name: bg-line;
+}
+
+ul.CheckMark-box  li a.CheckMark-link span::before{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    border-bottom: 1.5px solid #d51243;
+
+    animation: 0.4s linear 1 alternate forwards;
+}
+
+ul.CheckMark-box  li a.CheckMark-link span:nth-child(2):before{
+    animation-delay: 0.2s;
+}
+
+ul.CheckMark-box  li a.CheckMark-link span{
+    position: relative;
+}
+
+@keyframes bg-line {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}

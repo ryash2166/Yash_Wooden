@@ -1,0 +1,223 @@
+.ProductCard-box{
+    position: relative;
+    min-height: 26rem;
+    overflow-y: hidden;
+}
+
+@media(min-width:1499px) {
+    .ProductCard-box{
+        min-height: 30rem;
+    }
+}
+@media(max-width:1299px){
+    .ProductCard-box{
+        min-height: 29rem;
+    }
+}
+@media(max-width:1199px){
+    .ProductCard-box{
+        min-height: 25rem;
+    }
+}
+
+@media(max-width:1023px){
+    .ProductCard-box{
+        min-height: 25rem;
+    }
+}
+@media(max-width:991px){
+    .ProductCard-box{
+        min-height: 25rem;
+    }
+}
+
+@media(max-width:767px){
+    .ProductCard-box{
+        /* min-height: 30rem; */
+        min-height: 32rem;
+    }
+}
+
+.ProductCard-box:hover{
+    z-index: 10;
+    overflow-y: visible;
+}
+
+.ProductCard-box .PopProducts-card{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right:0%;
+    margin: auto ;
+    z-index: 9;
+    max-width:calc(100% -  5%);
+    height: 115%;
+    display: flex ;
+    flex-flow: column;
+    align-items: stretch;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    transition: all 0.3s linear;
+}
+
+
+@media (max-width:767px) {
+    .ProductCard-box .PopProducts-card{
+        max-width: 22rem;
+    }   
+}
+
+.ProductCard-box:hover .PopProducts-card{
+    z-index: 10;
+    box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.2);
+}
+
+/* PopCard-head */
+
+
+.PopCard-head .Card-btn-wrapper{
+    opacity: 0; 
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.PopCard-head img:nth-child(1){
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.PopCard-head img:nth-child(2){
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+}
+
+.PopCard-head:hover img:nth-child(1){
+    opacity: 0;
+}
+
+
+.PopCard-head:hover .Card-btn-wrapper{
+    opacity: 1;    
+    visibility: visible;
+}
+
+.Card-btn-wrapper .Card-button-box{
+    transform: translateY(50%);
+    min-height: 55px;
+}
+
+.PopCard-head:hover .Card-btn-wrapper .Card-button-box{
+    transform: translateY(0%);
+}
+
+.Card-btn-wrapper .Card-button-box li button{
+    margin: auto 1rem;
+    opacity: 0.5;
+}
+
+.Card-btn-wrapper .Card-button-box li button:hover{
+    opacity: 1;
+}
+
+/* PopCard-body */
+
+.card-texts a{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #B05C72;
+    display: block;
+}
+
+.card-texts p{
+    margin-block: .3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+    font-size: 1.2rem;   
+}
+
+/* PRODUCT DETAILS  */
+.product-details{
+    transform:translateY(30px);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.ProductCard-box:hover .product-details{
+    opacity: 1;
+    transform:translateY(0px);
+    visibility:visible;
+}
+
+.product-details ul.product-color-link li a{
+    border-radius: 50%;
+    margin-inline: .1rem;
+    border: 2px solid transparent;
+    transition: 0.3s all linear;
+}
+
+.product-details ul.product-color-link li a span{
+    width: 14px;
+    height: 14px;
+    transition: 0.3s all linear;
+}
+
+.product-details ul.product-color-link li:nth-child(1) a span{
+    background-color: #99C4FF;
+}
+.product-details ul.product-color-link li:nth-child(2) a span{
+    background-color: #D51243;
+}
+.product-details ul.product-color-link li:nth-child(3) a span{
+    background-color: #FF7373;
+}
+.product-details ul.product-color-link li:nth-child(4) a span{
+    background-color: #BE9AFF;
+}
+
+
+.product-details ul.product-color-link li:nth-child(1) a:hover{
+    border: 2px solid #99C4FF;
+}
+.product-details ul.product-color-link li:nth-child(2) a:hover{
+    border: 2px solid #D51243;
+}
+.product-details ul.product-color-link li:nth-child(3) a:hover{
+    border: 2px solid #FF7373;
+}
+.product-details ul.product-color-link li:nth-child(4) a:hover{
+    border: 2px solid #BE9AFF;
+}
+
+.product-details ul.product-color-link li a:hover span{
+    transform: scale(0.6);
+}
+
+
+ul.rating-link li a{
+    font-size: 1rem;
+    color: #B05C72;
+}
+
+ul.rating-link li p{
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+
+/* 
+@media (min-width:1021px) and (max-width:1240px) {
+    .ProductCard-box{
+        height: 360px;
+        }
+    }
+    
+    @media (min-width:640px) and (max-width:1020px) {
+    .ProductCard-box{
+        height: 340px;
+        }
+    }
+     */

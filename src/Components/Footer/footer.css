@@ -1,0 +1,150 @@
+
+
+.footer-logo{
+    display: block;
+    width: 140px;
+    height: 40px;
+}
+
+.columns{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: stretch;
+}
+
+.columns h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 2.5rem;
+}
+
+.foot-list li a{
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    color: #8e8e8e;
+    font-size: 1.1rem;
+    padding: 1rem 0rem;
+    transition: all 0.3s linear;
+}
+
+.foot-list li a i{
+    color: black;
+    font-size: 1.2rem;
+    margin-right: 1.4rem;
+    transition: all 0.3s linear;
+}
+
+.foot-list li a:hover{
+    padding-left: .3rem;
+    color: #D51243;
+}
+
+.foot-list li a:hover i{
+    color: #D51243;
+}
+
+#email-fild{
+    font-size: 1.1rem;
+    padding:0.8rem 1rem;
+    font-weight: 400;
+    border-radius: 5px;
+    display: block;
+    width: 90%;
+    outline: none;
+}
+
+.footBtn .Btn{
+    font-weight: 500;
+    margin-top: 1rem;
+    width:180px;
+    min-height: 55px;
+    font-size: 1rem;
+    border-radius: 6px;
+    background-color: #D51243;
+    color: #F8F8F8;
+    position: relative;
+    text-transform: capitalize;
+}    
+
+
+
+.footBtn .Btn::after{
+    position: absolute;
+    content: " ";
+    display: block;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background:linear-gradient(to right , transparent 50% ,transparent 80%,rgb(255,230,236,0.6));
+    animation:  0.4s linear  alternate forwards;
+}
+
+.footBtn .Btn:hover::after{
+    animation-name:ButtonSlide;
+}
+
+
+@keyframes ButtonSlide {
+    0%{
+        width: 0%;
+    }
+    90%{
+        width:100%;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+.footBtn .Btn i{
+    animation: 0.4s linear alternate backwards;
+
+}
+
+.footBtn .Btn:hover i.fa-arrow-right-long{
+    animation-name: MoveBtnArrow;
+}
+
+@keyframes MoveBtnArrow {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(4px);
+        opacity: 0;
+    }
+}
+
+
+
+
+.contact-bar{
+    border-top: 1px solid #a1a1a1;
+    padding: 1.8rem 0.8rem;
+}
+
+.copyRight-bar{
+    background-color: #EDEDED;
+}
+
+.copyRight-bar p a{
+    color: #000;
+    font-size: 1.1rem;
+    padding: 0px 3px;
+    font-weight: 600;
+}
+
+
+.contact-box .contact-text a:hover,
+.copyRight-bar p a:hover{
+    transition: all 0.3s linear;
+    color: #D51243;
+}
+
+
+

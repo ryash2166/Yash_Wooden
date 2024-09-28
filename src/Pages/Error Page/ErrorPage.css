@@ -1,0 +1,85 @@
+.Error-heading h1{
+    font-size: 3.3rem;
+    text-transform: capitalize; 
+    padding: 1.4rem 0px;
+}
+
+
+
+.Error-heading p{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    line-height: 2rem;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+
+.Back-HomeBtn{
+    background-color: #D51243;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 220px;
+    min-height: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Back-HomeBtn:hover{
+    color: #000;
+}
+
+.Back-HomeBtn i.fa-arrow-left-long{
+    animation: 0.4s linear alternate backwards;
+}
+
+
+.Back-HomeBtn:hover i.fa-arrow-left-long{
+    animation-name: MoveBtnArrow;
+}
+
+@keyframes MoveBtnArrow {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    75%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+.Back-HomeBtn::after{
+    position: absolute;
+    content: " ";
+    display: block;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background:linear-gradient(to right , transparent 50% ,transparent 80%,rgb(255,230,236,0.3));
+    animation:  0.4s linear  alternate forwards;
+}
+
+.Back-HomeBtn:hover::after{
+    animation-name:ButtonSlide ;
+}
+
+
+@keyframes ButtonSlide {
+    0%{
+        width: 0%;
+    }
+    90%{
+        width:100%;
+    }
+    100%{
+        opacity: 0;
+    }
+}

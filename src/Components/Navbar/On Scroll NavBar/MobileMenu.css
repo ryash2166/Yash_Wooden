@@ -1,0 +1,24 @@
+#MobileMenu{
+    /* max-width: calc(100% - 70%); */
+    height: 100vh;
+    overflow-y: auto;
+    position: relative;
+    z-index: 20;
+}
+
+.Accord-body ul.m-MenuLink li{
+    padding: 1rem;
+    border-bottom: 1px solid white;
+}
+
+.Accord-body ul.m-MenuLink li a{
+    font-weight: 500;
+    display: block;
+    font-size: 1rem;
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+.Accord-body ul.m-MenuLink li a:hover{
+    color: #D51243;
+}

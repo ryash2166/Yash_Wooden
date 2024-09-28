@@ -1,0 +1,44 @@
+.contact-link-wrap ul li span.contact-link p,
+.contact-link-wrap ul li span.contact-link a{
+    font-size: 1.1rem;
+    text-transform: capitalize  ;
+    color: #a5a5a5;
+    font-weight: 400;
+    transition: all 0.3s linear;
+}
+
+.contact-link-wrap ul li span.contact-link p:hover,
+.contact-link-wrap ul li span.contact-link a:hover{
+    color: #D51243;
+}
+
+.contact-btn-wrap .contact-btn:hover {
+    background-color: #D51243;
+    color:#FFFFFF;
+    transition: all 0.3s linear;
+}
+
+.contact-btn-wrap .contact-btn p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: currentColor;
+}
+
+.Contact-form button.form-button span.icons{
+    animation: 0.4s linear alternate backwards;
+
+}
+
+.Contact-form button.form-button:hover span.icons{
+    animation-name: MoveBtnArrow;
+}
+
+@keyframes MoveBtnArrow {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(6px);
+        opacity: 0;
+    }
+}
