@@ -6,7 +6,6 @@ import { cartReducer , wishReducer  } from "./reducer";
 const rootreducer = combineReducers({
     cartReducer,
     wishReducer,
-    // totalAmountReducer
 })
 
 

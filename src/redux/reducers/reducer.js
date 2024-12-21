@@ -8,15 +8,6 @@ const initialWishState = {
     wishList: localStoreData.wishList === undefined ? [] : localStoreData.wishList
 };
 
-// const initialTotalAmountState = {
-//     totalAmount: localStoreData.totalAmount.subTotal === 0 ? {
-//         GST: 18.00,
-//         Discount: 10.00,
-//         subTotal: 0,
-//         GSTAmount: 0,
-//         discountAmount: 0,
-//     } : localStoreData.totalAmount
-// };
 
 const updateLocalStorage = (key, data) => {
     const currentData = JSON.parse(localStorage.getItem('Ninico_data')) || {};
@@ -152,23 +143,3 @@ export const wishReducer = (state = initialWishState, action) => {
     updateLocalStorage('wishList', newState.wishList);
     return newState;
 };
-
-
-// export const totalAmountReducer = (state = initialTotalAmountState, action) => {
-//     let newState;
-//     switch (action.type) {
-//         case "SET_TOTAL_AMOUNT": {
-//             newState = {
-//                 ...state,
-//                 totalAmount: action.payload,
-//             };
-//             break;
-//         }
-//         default: {
-//             newState = state;
-//             break;
-//         }
-//     }
-//     updateLocalStorage('totalAmount', newState.totalAmount);
-//     return newState;
-// };
